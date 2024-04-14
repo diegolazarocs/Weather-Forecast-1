@@ -1,0 +1,106 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap");
+
+:root {
+  --white: var(#fff);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+  outline: none;
+  border: none;
+  list-style: none;
+  text-decoration: none;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  background: #f6f6f6;
+  height: 100vh;
+  width: 100%;
+  font-size: 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.conteiner {
+  background-color: #fff;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  text-align: center;
+}
+#search {
+  padding: 0.5rem;
+  background-color: #f6f6f6;
+  border-radius: 0.5rem;
+}
+#search input {
+  background-color: transparent;
+}
+#search i {
+  margin: 0 0.5rem;
+  font-size: 0.9rem;
+}
+#search button {
+  background-color: transparent;
+  cursor: pointer;
+}
+#title {
+  margin: 0.5rem 0;
+}
+#temp {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0 2rem;
+  background-color: rgb(211, 211, 218);
+  border-radius: 0.5rem;
+  color: black;
+}
+#temp_value {
+  font-size: 2rem;
+}
+#other_infos {
+  margin: 1rem 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  background-color: #f6f6f6;
+  border-radius: 0.5rem;
+  padding: 0.5rem;
+  gap: 1rem;
+}
+.info {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  border: 1px rgb(237, 237, 237) solid;
+  border-radius: 0.5rem;
+  background-color: #fff;
+  padding: 0.5rem;
+}
+.info h3 {
+  font-size: 0.7rem;
+}
+.info > i {
+  margin: 0 10px;
+  font-size: 1rem;
+}
+#temp_max_icon {
+  color: rgb(243, 125, 125);
+}
+#temp_min_icon {
+  color: rgb(34, 213, 216);
+}
+
+#humidity_icon {
+  color: rgb(77, 83, 255);
+}
+#wind_icon {
+  color: rgb(99, 244, 194);
+}

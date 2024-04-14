@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather Forecast</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="conteiner">
+      <form id="search">
+        <i class="fa-solid fa-location-dot"></i>
+        <input
+          type="search"
+          name="city_name"
+          id="city_name"
+          placeholder="Buscar Cidade"
+        />
+        <button type="submit">
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </button>
+      </form>
+
+      <div id="weather">
+        <h2 id="title">São Paulo, BR</h2>
+        <div id="infos">
+          <div id="temp">
+            <img
+              id="temp_img"
+              src="http://openWeathermap.org/img/wn/04d@2x.png"
+            />
+            <div>
+              <p id="temp_value">25<sup>°c</sup></p>
+              <p id="temp_description">Nublado</p>
+            </div>
+          </div>
+        </div>
+        <div id="other_infos">
+          <div class="info">
+            <i id="temp_max_icon" class="fa-solid fa-temperature-high"></i>
+            <div>
+              <h3>Temp. Máx.</h3>
+              <p id="temp_max">25<sup>°c</sup></p>
+            </div>
+          </div>
+          <div class="info">
+            <i id="temp_min_icon" class="fa-solid fa-temperature-low"></i>
+            <div>
+              <h3>Temp. Min.</h3>
+              <p id="temp_max">12<sup>°c</sup></p>
+            </div>
+          </div>
+          <div class="info">
+            <i id="humidity_icon" class="fa-solid fa-droplet"></i>
+            <div>
+              <h3>Humindade</h3>
+              <p id="humidity">50%</p>
+            </div>
+          </div>
+          <div class="info">
+            <i id="wind_icon" class="fa-solid fa-wind"></i>
+            <div>
+              <h3>Vento</h3>
+              <p id="wind">50 km/h</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="alert"></div>
+    </div>
+
+    <script src="index.js"></script>
+  </body>
+</html>
